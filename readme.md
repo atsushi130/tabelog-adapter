@@ -1,5 +1,5 @@
 # tabelog-searcher
-[![MIT / Apache2.0 dual licensed](https://img.shields.io/badge/dual%20license-MIT%20/%20Apache%202.0-blue.svg)](./license-mit)
+[![MIT / Apache2.0 dual licensed](https://img.shields.io/badge/dual%20license-MIT%20/%20Apache%202.0-blue.svg)](./license-mit)  
 tabelog-searcher's searchable area is Tokyo. Now, unsupported other than Tokyo.
 
 ## Usage
