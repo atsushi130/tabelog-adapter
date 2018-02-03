@@ -7,6 +7,7 @@
 
 extern crate regex;
 extern crate hyper;
+extern crate chrono;
 extern crate hyper_native_tls;
 extern crate rustc_serialize;
 
