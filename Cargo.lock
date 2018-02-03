@@ -334,7 +334,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tabelog-searcher"
+name = "tabelog_searcher"
 version = "0.1.0"
 dependencies = [
  "hyper 0.10.13 (registry+https://github.com/rust-lang/crates.io-index)",

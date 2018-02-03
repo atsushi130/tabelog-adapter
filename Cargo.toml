@@ -1,5 +1,5 @@
 [package]
-name = "tabelog-searcher"
+name = "tabelog_searcher"
 version = "0.1.0"
 authors = ["atsushi130 <atsushi_main@outlook.jp>"]
 
