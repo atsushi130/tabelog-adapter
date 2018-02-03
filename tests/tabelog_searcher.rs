@@ -11,13 +11,11 @@ extern crate tabelog_searcher;
 mod tabelog_searcher_tests {
 
     use tabelog_searcher::TabelogClient;
-    use tabelog_searcher::SearchCondition;
 
     #[test]
     fn test_tabelog_searcher() {
 
-        let search_condition = &SearchCondition::from("渋谷", "ラーメン");
-        let result = TabelogClient.search(search_condition);
+        let result = TabelogClient.search("渋谷", "ラーメン");
         match result.is_empty() {
             true  => println!("not found."),
             false =>
