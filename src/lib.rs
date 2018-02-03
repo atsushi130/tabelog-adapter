@@ -13,5 +13,4 @@ extern crate rustc_serialize;
 mod https_client;
 mod tabelog;
 
-pub use tabelog::SearchCondition;
 pub use tabelog::TabelogClient;
