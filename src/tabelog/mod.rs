@@ -8,4 +8,7 @@
 mod tabelog_client;
 pub use self::tabelog_client::TabelogClient;
 
+mod date_time_extension;
+use self::date_time_extension::DateTimeToString;
+
 mod tabelog_source;
