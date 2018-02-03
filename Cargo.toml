@@ -1,0 +1,10 @@
+[package]
+name = "tabelog-searcher"
+version = "0.1.0"
+authors = ["atsushi130 <atsushi_main@outlook.jp>"]
+
+[dependencies]
+regex = "0.1"
+hyper = "0.10"
+hyper-native-tls = "0.2"
+rustc-serialize  = "0.3"
