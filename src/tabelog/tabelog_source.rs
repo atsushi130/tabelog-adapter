@@ -16,9 +16,9 @@ impl<'a> TabelogSource {
     const BASE_URL: &'a str   = "https://tabelog.com/";
     const PARAMETERS: &'a str = "lid=hd_search1&vac_net=&svd=20180203&svt=1900&svps=2&hfc=1&Cat=MC&sw=";
 
-    pub fn get_source(&self, search_condition: &SearchCondition) -> String {
+    pub fn get_source(&self, location: &str, word: &str) -> String {
 
-        let url = self.build_url(search_condition);
+        let url = self.build_url(location, word);
 
         let mut response = String::new();
         HttpsClientBuilder::build()
@@ -31,11 +31,11 @@ impl<'a> TabelogSource {
         response
     }
 
-    fn build_url(&self, search_condition: &SearchCondition) -> String {
+    fn build_url(&self, location: &str, word: &str) -> String {
         format!("{}tokyo/A1303/A130301/R4698/rstLst/?vs=1&sa={}&sk={}&{}",
                 TabelogSource::BASE_URL,
-                search_condition.location,
-                search_condition.word,
+                location,
+                word,
                 TabelogSource::PARAMETERS
         )
     }

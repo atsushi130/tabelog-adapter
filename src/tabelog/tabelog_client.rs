@@ -13,8 +13,9 @@ pub struct TabelogClient;
 
 pub type SearchResult = Vec<String>;
 impl TabelogClient {
-    pub fn search(&self, search_condition: &SearchCondition) -> SearchResult {
-        let source = TabelogSource.get_source(search_condition);
+
+    pub fn search(&self, location: &str, word: &str) -> SearchResult {
+        let source = TabelogSource.get_source(location, word);
         let regex = Regex::new("data-detail-url=\"(?P<url>.*)\" data-rst-id").unwrap();
 
         regex.captures_iter(&source).map(|capture| {
