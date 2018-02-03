@@ -18,10 +18,16 @@ use std::io::Read;
 
 
 fn main() {
+    
     let html = get_html("渋谷駅", "ラーメン");
     let url_list = get_url_from(html.as_str());
-    for url in url_list {
-        println!("{}", url);
+
+    match url_list.is_empty() {
+        true  => println!("お店が見つかりませんでした"),
+        false =>
+            for url in url_list {
+                println!("{}", url);
+            }
     }
 }
 
