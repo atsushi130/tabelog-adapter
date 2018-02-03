@@ -5,11 +5,10 @@
 ```rust
 extern crate tabelog_searcher;
 use tabelog_searcher::TabelogClient;
-use tabelog_searcher::SearchCondition;
 
 fn main() {
-    let search_condition = &SearchCondition("渋谷", "ラーメン");
-    let result = TabelogClient.search(search_condition);
+
+    let result = TabelogClient.search("渋谷", "ラーメン");
     
     match result.is_empty() {
         true  => println!("not found."),
