@@ -8,7 +8,7 @@
 use https_client::HttpsClientBuilder;
 use std::io::Read;
 use super::DateTimeToString;
-use chrono::{ DateTime, Local };
+use chrono::Local;
 
 pub struct TabelogSource;
 
