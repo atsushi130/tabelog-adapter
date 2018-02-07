@@ -1,7 +1,12 @@
 [package]
-name = "tabelog_searcher"
-version = "0.1.0"
-authors = ["atsushi130 <atsushi_main@outlook.jp>"]
+name        = "tabelog_searcher"
+version     = "0.1.0"
+authors     = ["atsushi130 <atsushi_main@outlook.jp>"]
+license     = "MIT/Apache-2.0"
+description = "tabelog_searcher searchable food shop by area and word."
+readme      = "readme.md"
+repository  = "https://github.com/atsushi130/tabelog-searcher"
+keywords    = ["tabelog", "food", "shop"]
 
 [dependencies]
 regex  = "0.1"
@@ -9,3 +14,7 @@ hyper  = "0.10"
 chrono = "0.4"
 hyper-native-tls = "0.2"
 rustc-serialize  = "0.3"
+
+[lib]
+name = "tabelog_searcher"
+path = "./src/lib.rs"
